@@ -1,0 +1,901 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+a{
+  text-decoration: none;
+  
+}
+.color {
+  color: #a706f8;
+}
+.colorWhite{
+  color: white;
+}
+.bg {
+  background-color: #a706f8;
+}
+.center {
+  text-align: center;
+  color: black;
+}
+.btn {
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: #a706f8;
+}
+.btn2 {
+  font-size: 15px;
+  color: white;
+  height: 2.5rem;
+  width: 10rem;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+.btnBorder{
+  border: 1px solid rgba(128, 0, 128, 0.481);;
+}
+.btnBorder:hover{
+  color: white;
+  background-color: #a706f8;
+}
+.nav-links a:hover{
+  color: #a706f8;
+}
+.trip li:hover{
+  color: #a706f8;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.spanBorder{
+  padding: 25px 70px 25px 70px;
+  border: 1px solid #a706f8;
+  /* padding: 24px; */
+  border-radius: 10px;
+  /* margin-top:0px; */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+} */
+
+
+
+
+/* Header **************************************************************************************************************************************************************/
+
+.header {
+  height: 80vh;
+  width: 100%;
+  background: url("./images/bg.jpg") center/cover no-repeat;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: purple;
+  padding: 10px;
+  color: white;
+}
+.logo {
+  background-image: url("https://images.all-free-download.com/images/graphiclarge/purple_airplane_icon_vector_280729.jpg");
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+.contact-details span {
+  text-align: right;
+}
+
+/*  Navbar */
+
+.navbar {
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  padding-left: 40px;
+  font-size: 30px;
+}
+.brand span {
+  color: purple;
+}
+.nav-links {
+  padding-right: 40px;
+}
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+.tagline {
+  margin-top: 20vh;
+  /* margin-left:  30vw; */
+  /* align-items: center; */
+  justify-content: center;
+}
+.tagline h1 {
+  color: rgb(82, 39, 77);
+  font-weight: 500;
+  text-align: center;
+  /* align-items: center; */
+  margin: 0;
+
+  font-size: 75px;
+  text-shadow: 3px 2px 4px rgba(255, 255, 255, 0.915);
+}
+.tagline p {
+  font-size: 1em;
+  margin-left: 150px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.915)
+  /* align-items: center; */
+
+  /* margin-top: 200px;
+    margin-left: 200px; */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* filgth Search **********************************************************************************************************************************************/
+.flightDetails {
+  background-color: white;
+  margin-left: 115px;
+  position: absolute;
+  top: 530px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flight {
+  height: 50px;
+  width: 110px;
+  background-color:rgba(128, 0, 128, 0.06);
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.flight-box {
+  text-align: center;
+  position: relative;
+  /* border: 1px solid rgba(128, 0, 128, 0.481);; */
+  top: 15px;
+  cursor: pointer;
+}
+.flight-container {
+  margin-bottom: 30px;
+  /* margin-left: 140px; */
+}
+
+.trip {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.trip li {
+  font-size: 20px;
+  display: inline;
+  margin-left: 23px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.flight-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#button-align {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  margin-top: 20px;
+  /* border: 1px solid rgba(128, 0, 128, 0.481);; */
+}
+.flight-check {
+  height: 110px;
+  width: 265px;
+  background-color: rgba(128, 0, 128, 0.06);
+
+  border-radius: 10px;
+}
+.depart {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.arrive {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+
+.flightInputTop {
+  /* padding-top: 10px; */
+  font-weight: 400;
+  padding-left: 10px;
+}
+.flightInputTop2 {
+  /* padding-top: 10px; */
+  font-weight: 400;
+  padding-left: 80px;
+}
+.flightInputMid {
+  margin-top: 12px;
+  font-weight: 700;
+  padding-left: 10px;
+  font-family: "Inter", sans-serif;
+}
+.flightInputBottom {
+ font-weight: 300;
+ margin-top: 8px;
+ margin-left: 10px;
+}
+
+
+.date {
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  width: 399px;
+  background-color: rgba(128, 0, 128, 0.06);;
+
+  border-radius: 10px;
+}
+.date-alining {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.day{
+  margin-top: -9px ;
+}
+.dateInput{
+  margin-top: -3px;
+}
+
+.opacityForm {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.opacityForm2 {
+  padding-left: 110px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.logo-align {
+  padding-left: 180px;
+  padding-top: 10px;
+}
+
+
+.flight-location-laining {
+  display: flex;
+  /* margin-left: 140px; */
+  flex-direction: row;
+}
+
+.passenger {
+  height: 110px;
+  width: 250px;
+  background-color: rgba(128, 0, 128, 0.06);
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.passenger .flightInputTop{
+  /* font-size: 20px; */
+  margin-top: 7px;
+}
+.passenger .flightInputMiddle{
+  margin-top: -5px;
+}
+.passenger .flightInputBottom{
+  margin-left: 10px;
+  margin-top: -5px;
+}
+.button {
+  height: 40px;
+  width: 80px;
+  background-color: rgb(220, 20, 210);
+  border-radius: 6px;
+  color: white;
+  border: none;
+}
+.searchButton {
+  padding-bottom: 22px;
+   text-align: center;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+  margin-bottom: 20px; 
+}
+.direction-logo {
+  font-size: 30px;
+  position: relative;
+  top: 35px;
+}
+input {
+  background-color: rgba(128, 0, 128, 0);;
+  border: none;
+  font-size: 20px;
+}
+
+/* features    ***************************************************************/
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+  padding: 60px;
+}
+
+.deals {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  border-top: 0;
+  position: relative;
+  top: 400px;
+}
+
+.feature.img {
+  border-radius: 25px;
+
+  padding: 20px;
+
+  /* box-shadow: 20px -60px 0px 0px  rgba(128, 0, 128, 0.5) inset; */
+  box-shadow: 0px 0px 10px 20px 5px rgba(92, 13, 13, 0.8) inset;
+  color: #007bff;
+  height: 500px; /* 80% of the viewport height */
+  width: 320px;
+  background-image: url("./images/product.jpg");
+  /* box-shadow: inset 0px -56px 0px rgba(111, 13, 153, 0.688); */
+  box-shadow: inset 0px -136px 80px 0px rgba(4, 60, 128, 1);
+  z-index: 1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+.feature hr{
+  width: 13vw;
+  margin-left: 0px;
+}
+
+.feature.text {
+  border-radius: 25px;
+  height: 500px; /* 80% of the viewport height */
+  width: 320px;
+}
+
+.feature.text h1 {
+  font-weight: 400;
+  font-size: 37px;
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
+.feature.text p {
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+}
+
+/* Top destinations */
+
+.topDestinationContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.topDestinationItem1 {
+  text-align: center;
+  background: url("/images/tourism.jpg ") center/cover no-repeat;
+  border-radius: 25px;
+  height: 884px;
+}
+
+.grid-item1 {
+  padding: 33px;
+  height: 154px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+}
+.grid-item2 {
+  height: 154px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+  padding: 33px;
+}
+.grid-item3 {
+  height: 320px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+  padding: 34px;
+}
+.grid-item4 {
+  background: url("./images/tajmahals.jpg") center/cover no-repeat;
+  height: 300px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  padding: 33px;
+}
+.grid-small{
+  height: 170px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+
+  padding: 34px;
+}
+.grid-item6 {
+  height: 154px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  background: url("./images/sea.jpg") center/cover no-repeat;
+  padding: 34px;
+}
+.grid-item7 {
+  background: url("./images/tajmahals.jpg") center/cover no-repeat;
+  height: 333px;
+  margin-bottom: 21px;
+  border-radius: 13px;
+  padding: 33px;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  color: #3498db;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.my-button:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* hot deals */
+
+.hotDeals {
+  margin-top: 50px;
+  margin-left: 65px;
+}
+
+.hotDealGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  align-items: center;
+  gap: 30px;
+  /* padding-right: 10px; */
+  padding-right: 82px;
+}
+
+.card {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 10px 10px 21px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  /* width: 80%; */
+  height: 15rem;
+  width: 20rem;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.location {
+  position: relative;
+  left: 20px;
+  bottom: 55px;
+  color:white;
+}
+.card-content {
+  margin-top: -27px;
+}
+
+.card__content h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.card__content p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Offer */
+
+.offer {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  height: 50vh;
+  gap: 20px;
+}
+.first {
+  position: relative;
+  background: url("./images/passport.jpg") center/cover no-repeat;
+
+  border-radius: 20px;
+}
+
+.second {
+  background: url("./images/mountain_travellers.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.third {
+  background: url("./images/mountain_travellers.jpg") center/cover no-repeat;
+  border-radius: 20px;
+}
+
+.offer-h1 {
+  position: relative;
+  color: #ffffff;
+}
+.offerText {
+  margin-left: 2vw;
+  position: relative;
+  top: 219px;
+}
+
+/* destination */
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  gap: 100px;
+}
+
+
+/* Define the grid container */
+.gridContainer2 {
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 1fr);
+  /* background-color: blue; */
+  margin: 44px 130px 44px 130px;
+  gap: 28px 96px;
+}
+
+.gridChild {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* border-radius: 10px 10px; */
+}
+.child1 {
+  /* background-color: red; */
+  background-size: cover;
+
+  border-radius: 10px 0px 0px 10px;
+}
+.child1.img1{
+  background-image: url("/images/1.jpg");
+}
+.child1.img2{
+  background-image: url("/images/kanyakumari.jpg");
+}
+.child1.img3{
+  background-image: url("/images/2.jpg");
+}
+.child1.img4{
+  background-image: url("/images/1.jpg");
+}
+.child1.img5{
+  background-image: url("/images/kanyakumari.jpg");
+}
+.child1.img6{
+  background-image: url("/images/2.jpg");
+}
+/* .child1{
+background-color: rgb(255, 5, 5)(255, 242, 0);
+} */
+
+.child2 {
+  position: relative;
+  top: 25px;
+  left: 10px;
+  text-align: left;
+}
+.child2 b {
+  font-size: 22px;
+  font-weight: 400;
+}
+.grid-item {
+  border: 1px solid black;
+
+  text-align: center;
+  border-radius: 10px 10px;
+}
+.grid-container {
+  grid-gap: 30px;
+}
+
+/* news  ***********************************************************************************************************************************************/
+.news{
+  margin-bottom: 293px;
+  padding: 40px;
+}
+hr{
+  position: relative;
+  top: -13px;
+  height: 1px;
+
+  width: 15vw;
+  position: relative;
+  bottom: 25px;
+  background-color: #a706f8;
+}
+.heading1{
+  text-align: center;
+  font: size 72px; 
+  position: relative;
+   
+}
+/* h1::after{
+  content: "";
+  position: absolute;
+ 
+  height: 4px;
+  width: 100%;
+  left: 10;
+  right: 0;
+  background-color: rgb(165, 42, 144); */
+
+.heding7{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.newsGrid1 img{
+ border-radius: 12px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 0px;
+}
+.newsGrid .btn2{
+  height: 34px;
+  width: 96px;
+}
+
+.newsImages3{
+  height: 350px;
+  width: 800px;
+  border-radius: 20px;
+}
+
+
+.newsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 200px;
+  gap: 10px;
+}
+.newsGrid1{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 120px;
+  gap: 5px;
+}
+.newsImages{
+  background-color:w;
+} 
+
+.newsImages2{
+  /* background-color: rgb(133, 206, 206); */
+  height: 100px;
+
+}
+.text{
+  display: inline;
+}
+
+/* Subscribe input *****************************************************************************************************************************************/
+.newsLetter{
+  background-color: rgba(118, 118, 118, 0.085);
+}
+.subscribe{
+  margin-top: 50px;
+}
+.subscribe h1{
+  margin-top: -13px;
+  font-weight: 500;
+  font-size: 37px;
+}
+.subscribe p{
+  font-weight: 500;
+  font-size: 18px;
+}
+.newsLetter{
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+}
+.subscribeInput{
+  margin-top: 58px;
+  margin-left: 113px;
+}
+
+#letterIcon {
+  font-size: 199px;
+  margin-top: -13px;
+}
+.subscribeText{
+  border:none;
+  padding: 27px;
+  background-color: #fff;
+} 
+.subscribeText::placeholder{
+   color: #a706f8;
+}
+.subscribeBtn{
+  border: none;
+  margin: 0px;
+  border-radius: 0px 15px 15px 0px;
+padding: 27px 55px 27px 46px;
+
+}
+.letterIcon{
+  width: 211px;
+  height: 200px;
+  /* background-color: red; */
+}
+
+/* Footer ***********************************************************************************************************************************/
+
+#footer * {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+
+  margin: auto;
+}
+.row {
+  display: flex;
+
+}
+
+.footer {
+  padding: 70px 15px;
+}
+.footer-col {
+  width: 20%;
+  padding: 0;
+}
+.footer-col h4 {
+  /* font-weight: 900; */
+/* background-color: red; */
+  font-size: 17px;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 10px;
+}
+.footer-col h4::before {
+  content: "";
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+ 
+  height: 2px;
+  box-sizing: border-box;
+  width: 40px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+
+  font-size: 14px;
+  text-transform: capitalize;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col{
+  margin-right: 65px;
+}
+.hrFooter{
+  margin: -13px;
+  margin-left: 10px;
+}
+.hrRotated{
+  transform: rotate(90deg);
+  height: 0px;
+  width: 50px;
+  position: relative;
+  left: -150px;
+
+  top: 31px;
+}
+.footer-col ul li a:hover {
+  padding-left: 8px;
+}
+.footer-col b{
+  font-size: 19px;
+}
+.social-link {
+  display: flex;
+}
+.social-link a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  /* background-color: rgba(128, 4, 4, 0.2); */
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.social-links a:hover {
+  color: #24262b;
+  background-color: #000000;
+}
